@@ -10,6 +10,9 @@
 // BMI = weight / (height × height)
 
 const weight = 60;   
-const height = 1.65; 
+const height = 5.65; 
 const  bmi = weight / (height * height);
 console.log(" BMI: " ,bmi);
+
+
+
