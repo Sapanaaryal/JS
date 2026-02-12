@@ -91,8 +91,27 @@
 // console.log(mul(12,12));
 
 
-function multiply(a,b){
-    console.log(a*b);
-}
-multiply(13,13)
+// function multiply(a,b){
+//     console.log(a*b);
+// }
+// multiply(13,13)
+
+// function multiply(){
+//     // local variable
+//     let a=10;
+//     a*=2;
+//     console.log( "local variable",a);
+
+// }
+// multiply()
+// console.log(a);
+
+
+
+
+// loop in js
+// 1.for loop
+for(let i=0;i<5;i++){
+    console.log(i);
+} 
 

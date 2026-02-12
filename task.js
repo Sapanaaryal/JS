@@ -123,7 +123,16 @@
 
 // 8. Check whether the given number is odd or even using function and conditional statement
 
-function OE(num) {
+// function OE(num) {
+//     if (num % 2 === 0) {
+//         console.log(num + " is Even");
+//     } else {
+//         console.log(num + " is Odd");
+//     }
+// }
+// OE(4)
+// or Aeeow dunction morden function syntax
+const OE =(num)=>{
     if (num % 2 === 0) {
         console.log(num + " is Even");
     } else {
@@ -132,3 +141,6 @@ function OE(num) {
 }
 OE(4)
 
+const mul = ()=>{
+    
+}
