@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   <!-- <p id ="head1"></p>
+// <button onclick="changeContent()">Load Content</button>
+// <button onclick="removeContent()">Remove Content</button>
+
+//         function changeContent(){
+//             let headingContent=document.getElementById("head1")
+//             headingContent.innerHTML="Changed Content after click event"
+//         }
+//         function removeContent(){
+//             document.getElementById("head1").innerHTML=""
+//         } --> 
+
+
+         <!-- // innerHTML object can be used to change the content fromat using html tags along with the contents.
+        // whereas innerTEXT only allows to input contents to the particular element.
+    //   document.getElementById("head1").innerHTML=" <b>hello world</b>"
+        // document.getElementById("head1").innerText="<b>hello world</b>"
+
+        // alert(head1) --> 
+        <form>
+          Num1:
+            <input type="number" id="num1"><br>
+            Num2:<input type="number" id="num2"><br><br>
+
+            <button  type ="button"onclick ="addNum()"> Add</button>
+            <button  type ="button"onclick ="subNum()"> Subtract</button>
+            <button  type ="button"onclick ="MulNum()"> Multiply</button>
+            <button  type ="button"onclick ="DivNum()"> Division</button>
+            <button onclick="clear()">clear</button>
+
+            <p id="result"></p>
+            </form>
+
+            <script>
+                function addNum(){
+                let num1 = document.getElementById("num1").value 
+                let num2 = document.getElementById("num2").value 
+                let sum = Number(num1)+Number(num2)
+                document.getElementById("result").innerHTML = "sum:" +sum
+                }
+                function subNum(){
+                let num1 = document.getElementById("num1").value 
+                let num2 = document.getElementById("num2").value 
+                let sub= Number(num1)-Number(num2)
+                document.getElementById("result").innerHTML = "sub:" +sub
+
+                }
+
+                function MulNum(){
+                let num1 = document.getElementById("num1").value 
+                let num2 = document.getElementById("num2").value 
+                let Mul= Number(num1)*Number(num2)
+                document.getElementById("result").innerHTML = "Mul:" +Mul
+                
+                }
+                function DivNum(){
+                let num1 = document.getElementById("num1").value 
+                let num2 = document.getElementById("num2").value 
+                let Div= Number(num1)/Number(num2)
+                document.getElementById("result").innerHTML = "Div:" +Div
+                
+                }
+                function clear(){
+             document.getElementById("head1").innerHTML=""
+                }
+            </script>
+
+
+    
+</body>
+</html>

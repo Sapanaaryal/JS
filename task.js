@@ -141,6 +141,3 @@ const OE =(num)=>{
 }
 OE(4)
 
-const mul = ()=>{
-    
-}

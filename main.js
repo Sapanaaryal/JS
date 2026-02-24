@@ -8,14 +8,6 @@
 // let b=30
 
 
-fullname="sapana";
-console.log(fullname);
-age=24;
-price=22.3;
-radius=14;
-x=null;
-y=undefined;
-console.log(radius)
-console.log(x);
 
-console.log(y);
+
+

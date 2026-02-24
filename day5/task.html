@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Task Of Day 5</title>
+</head>
+<body>
+
+
+  <button onclick="Name()">Name</button>
+  <h1 id="myName"></h1>
+
+  <p id="paraText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquam fuga quod harum 
+    ipsa hic recusandae accusamus quis modi ratione tempora esse, quia illum eos? Hic, pariatur at? Recusandae, quos.</p>
+  <button onclick="hideText()">Hide </button>
+
+  <!-- 6 -->
+  <input type="text" id="userInput" placeholder="Enter text">
+  <button onclick="displayText()">Display Text</button>
+  <h1 id="display"></h1>
+
+  <!-- 9 -->
+  <button onclick="countClick()">Click Me</button>
+  <p id="count">Clicked: 0 times</p>
+
+  <!-- 10 -->
+  <button onclick="showDateTime()">Show Date & Time</button>
+  <p id="dateTime"></p>
+
+  <script>
+    // 1.  Create a Function that subtracts two numbers and returns the result
+    function subtract(a, b) 
+    {
+      return a - b;
+    }
+    console.log("Subtraction:", subtract(10, 5));
+
+    
+    // 2.  Create an Arrow function that divides two numbers and return the result
+const divide = (a, b) => a / b;
+    console.log("Division:", divide(10, 2));
+
+
+    // 3.  Create a button shows your name in <h1> tag when clicked
+    function Name() { 
+      document.getElementById("myName").innerText = "Sapana Aryal";
+    }
+
+    // 4. Create a button hides paragraph text inside a paragraph of two number
+    function hideText() {
+      document.getElementById("paraText").style.display = "none";
+    }
+
+    // 5. Arrow function to find greatest of two numbers
+    let greatest = (a, b) =>{
+      if(a>b){
+     console.log( a + " is greatest");}
+    else{
+     console.log( b + " is greatest");
+   }
+  }
+    greatest(10, 20)
+    // 6. Display input text in <h1>
+    function displayText() {
+      let text = document.getElementById("userInput").value;
+      document.getElementById("display").innerText = text;
+    }
+
+    // 7. Function that returns product of three numbers
+    function product(a, b, c) {
+      return a * b * c;
+    }
+    console.log("Product:", product(2, 3, 4));
+
+    // 8. Arrow function to check even or odd
+    const checkEvenOdd = (num) => num % 2 === 0 ? "Even" : "Odd";
+    console.log("Number is:", checkEvenOdd(7));
+
+    // 9. Button click counter
+    let clickCount = 0;
+    function countClick() {
+      clickCount++;
+      document.getElementById("count").innerText =
+        "Clicked: " + clickCount + " times";
+    }
+
+    // 10. Show current date and time
+    function showDateTime() {
+      let now = new Date();
+      document.getElementById("dateTime").innerText = now;
+    }
+  </script>
+
+</body>
+</html>
